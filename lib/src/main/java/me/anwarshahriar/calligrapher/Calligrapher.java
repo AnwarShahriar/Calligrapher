@@ -26,9 +26,10 @@ public class Calligrapher {
     }
 
 
-    public void setFont(Activity activity, String fontPath) {
+    public void setFont(Activity activity, String fontPath, boolean includeActionbar) {
         Typeface typeface = cacheFont(fontPath);
-        View rootView = activity.getWindow().getDecorView();
+        View rootView = includeActionbar ? activity.getWindow().getDecorView()
+                : ((ViewGroup) activity.findViewById(android.R.id.content)).getChildAt(0);
         traverseView(rootView, typeface);
     }
 
