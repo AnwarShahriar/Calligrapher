@@ -13,6 +13,7 @@ public class ExampleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_example);
 
         Calligrapher calligrapher = new Calligrapher(this);
-        calligrapher.setFont(this, "Oranienbaum.ttf", false);
+        calligrapher.setFont(this, "alexbrush/AlexBrush-Regular.ttf", true); // Set font for whole window including actionbar
+        calligrapher.setFont(findViewById(R.id.btnGroup), "oranienbaum/Oranienbaum.ttf"); // Set another font to buttons
     }
 }

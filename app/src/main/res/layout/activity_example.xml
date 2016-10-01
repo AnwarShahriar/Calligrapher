@@ -15,33 +15,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hello Calligrapher 1"
-        android:textSize="14sp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello Calligrapher 2"
-        android:textSize="16sp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello Calligrapher 3"
         android:textSize="18sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Calligrapher 4"
+        android:text="Hello Calligrapher 2"
         android:textSize="20sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Calligrapher 5"
+        android:text="Hello Calligrapher 3"
         android:textSize="22sp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Calligrapher 4"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Calligrapher 5"
+        android:textSize="26sp"/>
+
     <LinearLayout
+        android:id="@+id/btnGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -49,12 +50,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button 1"/>
+            android:text="Button 1"
+            android:textSize="20sp"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button 2"/>
+            android:text="Button 2"
+            android:textSize="20sp"/>
     </LinearLayout>
 </LinearLayout>
