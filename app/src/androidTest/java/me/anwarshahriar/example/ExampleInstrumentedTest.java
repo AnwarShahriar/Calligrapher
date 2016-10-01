@@ -1,4 +1,4 @@
-package me.anwarshahriar.calligrapher;
+package me.anwarshahriar.example;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

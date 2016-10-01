@@ -1,4 +1,4 @@
-package me.anwarshahriar.calligrapher;
+package me.anwarshahriar.example;
 
 import org.junit.Test;
 

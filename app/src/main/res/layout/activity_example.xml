@@ -9,40 +9,52 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="me.anwarshahriar.calligrapher.ExampleActivity">
+    tools:context="me.anwarshahriar.example.ExampleActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Calligrapher"/>
+        android:text="Hello Calligrapher 1"
+        android:textSize="14sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Calligrapher"/>
+        android:text="Hello Calligrapher 2"
+        android:textSize="16sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Calligrapher"/>
+        android:text="Hello Calligrapher 3"
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Calligrapher"/>
+        android:text="Hello Calligrapher 4"
+        android:textSize="20sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Calligrapher"/>
+        android:text="Hello Calligrapher 5"
+        android:textSize="22sp"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Calligrapher"/>
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button 1"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello Calligrapher"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button 2"/>
+    </LinearLayout>
 </LinearLayout>
