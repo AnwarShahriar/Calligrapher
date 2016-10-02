@@ -11,5 +11,13 @@ dependencies {
   compile 'me.anwarshahriar:calligrapher:1.0'
 }
 ```
+> ### Place your font under assets directory or sub directories under assets.
+
+### Example use
+```java
+Calligrapher calligrapher = new Calligrapher(this);
+calligrapher.setFont(this, "alexbrush/AlexBrush-Regular.ttf", true);
+```
+
 ![demo 1](./screenshots/demo_one.png)
 ![demo 2](./screenshots/demo_two.png)
