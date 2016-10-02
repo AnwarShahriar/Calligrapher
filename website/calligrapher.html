@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Calligrapher</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
+<![endif]-->
+<style type="text/css">
+	body {
+		font-family: 'Muli', sans-serif;	
+	}
+	
+	h1 {
+		text-align: center;
+		font-family: 'Droid Serif', serif;
+	}
+	
+	h4 {
+		text-align:center;
+		font-weight: bold;
+	}
+	
+	p {
+		font-size: 18pt;
+	}
+	
+	.top-gap {
+		margin-top: 100px;
+	}
+	
+	.bottom-gap {
+		margin-bottom: 100px;
+	}
+	
+	a {
+		font-size: 18pt;
+	}
+	
+	.text-center {
+		text-align: center;
+	}
+	
+	.author {
+		font-size: 16pt;
+	}
+</style>
+</head>
+
+<body>
+	<a href="https://github.com/AnwarShahriar/Calligrapher"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+	<div class="container">
+		<div class="row">
+			<h1 class="top-gap">Calligrapher</h1>
+		</div>
+		<div class="row text-center">
+			<p class="author">created by <a class="author" href="https://twitter.com/AnwarShahriar">@anwarshahriar</a></p>
+		</div>
+		<div class="row">
+			<h4>A helper library to set custom fonts to your view</h4>
+		</div>
+		<div class="row text-center">
+			<a href="./javadoc/index.html">Javadoc</a>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-md-offset-2">
+				<p class="top-gap">This is a simple library for setting specific font to all of your view with a single line. Feel free to fork it or fix any issues and make a pull request.</p>
+				<br>
+				<script src="https://gist.github.com/AnwarShahriar/8e1690c2fa30014f7ffe36b6c73c051a.js"></script>
+				<p>Integrating this library is really easy you just need to add these two lines of code after calling <code>setContentView()</code></p>
+				<br>
+				<script src="https://gist.github.com/AnwarShahriar/8a87aef067bdf89aa5ffb6dd8d882021.js"></script>
+				<p>Above code will set a given custom font to the whole activity including <code>ActionBar</code>. If you want to exclude ActionBar from setting custom font 
+				just set <code>false</code> on the <code>setFont</code> method.</p>
+				<br>
+				<p>If you don't want to set custom font to your whole activity that's okay too. You just need to specific <code>View</code> or 
+				<code>ViewGroup</code> to pass into <code>setFont</code> method. Event you can set multiple font to same screen, just remember custom font will be applied to an entire 
+				<code>ViewGroup</code> and it's child.</p>
+				<br>
+				<p>Let's see some code and the look of the entire Activity screen.</p>
+				<script src="https://gist.github.com/AnwarShahriar/963f47b868b6e92f306b2aff31c336ba.js"></script>
+				<script src="https://gist.github.com/AnwarShahriar/8a87aef067bdf89aa5ffb6dd8d882021.js"></script>
+				<img class="img-responsive" src="./images/calligrapher_one.png" alt="demo 1">
+				<p>Let's change the <code>Button</code> section code identified with <code>"@+id/btnGroup"</code> and see the impact.</p>
+				<br>
+				<script src="https://gist.github.com/AnwarShahriar/c8066fb2fd7dac430de71adad33d788c.js"></script>
+				<img class="img-responsive" src="./images/calligrapher_two.png" alt="demo 2">
+				<p>Above example gives you a glimps of what it can do in a simple way.</p>
+				<br>
+				<p>Gradle: <code>compile 'me.anwarshahriar:calligrapher:1.0'</code></p>
+				<pre class="bottom-gap">
+License:
+
+Copyright 2016 Md. Shahriar Anwar
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+					
+http://www.apache.org/licenses/LICENSE-2.0
+					
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+				</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
